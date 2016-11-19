@@ -36,7 +36,7 @@ public class orgnrec extends HttpServlet {
 		       user1.setOrgan(organs);
 		      user1.setUserId(uid);
 		      
-		      
+		       
 		         
 		         session.save(user1);
 		         System.out.println("hello");

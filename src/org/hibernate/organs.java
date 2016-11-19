@@ -15,7 +15,7 @@ public class organs {
 		return id;
 	}
 	public void setId(int id) { 
-		this.id = id; 
+		this.id = id;  
 	}
 	public String getUserId() {
 		return UserId;

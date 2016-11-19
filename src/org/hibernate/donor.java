@@ -1,7 +1,11 @@
 package org.hibernate;
 
-public class donor {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class donor {
+    @Id
 	private String UserId;
 	private String latitude;
 	private String longitude;

@@ -1,20 +1,24 @@
 package org.hibernate;
 import java.util.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class organs {
-	int n;
-	ArrayList organs = new ArrayList();	
-	public int getN() {
-		return n;
+	@Id
+	String UserId;
+	String Organ;
+	public String getUserId() {
+		return UserId;
 	}
-	public void setN(int n) {
-		this.n = n;
+	public void setUserId(String userId) {
+		UserId = userId;
 	}
-	public ArrayList getOrgans() {
-	 
-		return organs;
+	public String getOrgan() {
+		return Organ;
 	}
-	public void setOrgans(ArrayList organs) {
-		this.organs = organs;
+	public void setOrgan(String organ) {
+		Organ = organ;
 	}
 	
 }

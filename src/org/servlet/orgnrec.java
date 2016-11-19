@@ -35,8 +35,8 @@ public class orgnrec extends HttpServlet {
 			organs user1= new organs();
 		       user1.setOrgan(organs);
 		      user1.setUserId(uid);
-		      user1.setId(4);
 		      
+		       
 		         
 		         session.save(user1);
 		         System.out.println("hello");

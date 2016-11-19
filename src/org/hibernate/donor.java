@@ -1,6 +1,7 @@
 package org.hibernate;
 
 public class donor {
+
 	private String UserId;
 	private String UserName;
 	private String Address ;

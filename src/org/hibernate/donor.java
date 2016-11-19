@@ -2,8 +2,18 @@ package org.hibernate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.SecondaryTable;
+import javax.persistence.SecondaryTables;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="donor")
+@SecondaryTables({
+    @SecondaryTable(name="organs", pkJoinColumns={
+        @PrimaryKeyJoinColumn(name="UserId", referencedColumnName="UserId") }),
+    
+})
 public class donor {
      @Id
 	private String UserId;

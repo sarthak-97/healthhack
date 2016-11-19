@@ -25,6 +25,13 @@ public class donor {
 	private String Dob;
 	private String Diseases;
 	private String Mob;
+	private String loc;
+	public String getLoc() {
+		return loc;
+	}
+	public void setLoc(String loc) {
+		this.loc = loc;
+	}
 	public String getUserId() {
 		return UserId;
 	}

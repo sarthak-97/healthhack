@@ -15,7 +15,7 @@ import javax.persistence.Table;
     
 })
 public class donor {
-    @Id
+     @Id
 	private String UserId;
 	private String latitude;
 	private String longitude;

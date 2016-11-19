@@ -12,6 +12,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+
+
+
 import org.hibernate.donor;
 /**
  * Servlet implementation class donrec
@@ -43,13 +46,18 @@ public class donrec extends HttpServlet {
 		       
 		    donor d= new donor();  
 		      
-		       d.setUserName("UserName");
-		       d.setUserId("UserId");
+		       d.setUserName(UserName);
+		       d.setUserId(UserId);
 
-		         System.out.println("hello");
+		         
 		         session.save(d);
+		         System.out.println("hello");
 			       session.getTransaction().commit();
 			       session.close();
+			       response.setContentType("text/html");
+			       request.setAttribute("t1",UserId);
+			       request.getRequestDispatcher("/home2.jsp").forward(request, response);
+			       
 		            
 			 }   
 	

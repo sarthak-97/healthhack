@@ -7,15 +7,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class organs {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	String id;
+	@Id	
+	int id;
 	String UserId;
 	String Organ;
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) { 
 		this.id = id;
 	}
 	public String getUserId() {

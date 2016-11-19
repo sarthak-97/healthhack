@@ -5,11 +5,7 @@ import javax.persistence.Id;
 
 @Entity
 public class donor {
-<<<<<<< HEAD
-	@Id
-=======
-    @Id
->>>>>>> branch 'master' of https://github.com/sarthak-97/healthhack.git
+     @Id
 	private String UserId;
 	private String latitude;
 	private String longitude;

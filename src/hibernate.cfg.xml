@@ -51,8 +51,8 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">create</property>
 
-        <mapping class="org.javabrain.donor"/>
-        <mapping class="org.javabrain.organs"/>
+        <mapping class="org.hibernate.donor"/>
+        <mapping class="org.hibernate.organs"/>
     </session-factory>
 
 </hibernate-configuration>

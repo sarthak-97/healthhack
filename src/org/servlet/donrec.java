@@ -46,14 +46,18 @@ public class donrec extends HttpServlet {
 		       
 		    donor d= new donor();  
 		      
-		       d.setUserName("UserName");
-		       d.setUserId("UserId");
+		       d.setUserName(UserName);
+		       d.setUserId(UserId);
 
 		         
 		         session.save(d);
 		         System.out.println("hello");
 			       session.getTransaction().commit();
 			       session.close();
+			       response.setContentType("text/html");
+			       request.setAttribute("t1",UserId);
+			       request.getRequestDispatcher("/home2.jsp").forward(request, response);
+			       
 		            
 			 }   
 	

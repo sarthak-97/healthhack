@@ -3,6 +3,9 @@ package org.hibernate;
 public class donor {
 
 	private String UserId;
+	private String latitude;
+	private String longitude;
+
 	private String UserName;
 	private String Address ;
 	private String Dob;
@@ -14,11 +17,23 @@ public class donor {
 	public void setUserId(String userId) {
 		UserId = userId;
 	}
+	public String getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+	public String getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
 	public String getUserName() {
 		return UserName;
 	}
 	public void setUserName(String userName) {
-		UserName = userName;
+		UserName = userName; 
 	}
 	public String getAddress() {
 		return Address;

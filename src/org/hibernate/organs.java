@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class organs {
-	@Id	
+	@Id	@GeneratedValue
 	int id;
 	String UserId;
 	String Organ;
@@ -15,7 +15,7 @@ public class organs {
 		return id;
 	}
 	public void setId(int id) { 
-		this.id = id;
+		this.id = id; 
 	}
 	public String getUserId() {
 		return UserId;

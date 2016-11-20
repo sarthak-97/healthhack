@@ -6,9 +6,11 @@ import org.hibernate.cfg.Configuration;
 public class test {
 	public static void main(String[] args) {
       organs user = new organs();
-        
-        user.setOrgan("hjdgshjhgsd");
+        user.setId(1);
+       user.setOrgan("hjgjgjgj");
+       user.setUserId("skjdhkjsahkash");
        
+        
         
       SessionFactory sessionFactory =  new Configuration().configure().buildSessionFactory();        		
       

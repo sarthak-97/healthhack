@@ -4,20 +4,12 @@
   <welcome-file-list>
     <welcome-file>home.html</welcome-file>
   </welcome-file-list>
- <servlet>
+  <servlet>
     <servlet-name>donrec</servlet-name>
     <servlet-class>org.servlet.donrec</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>donrec</servlet-name>
     <url-pattern>/donrec/*</url-pattern>
-  </servlet-mapping>
-   <servlet>
-    <servlet-name>orgnrec</servlet-name>
-    <servlet-class>org.servlet.orgnrec</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>orgnrec</servlet-name>
-    <url-pattern>/orgnrec/*</url-pattern>
   </servlet-mapping>
 </web-app>

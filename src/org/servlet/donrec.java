@@ -36,8 +36,8 @@ public class donrec extends HttpServlet {
 		String Address=request.getParameter("t3");
 		String Dob=request.getParameter("t6");
 		String Diseases=request.getParameter("t7");
-		String Mob=request.getParameter("t8");
-			
+		String loc=request.getParameter("t8");
+	    
 			SessionFactory sessionFactory =  new Configuration().configure().buildSessionFactory();        		
 		       
 		       Session session =	sessionFactory.openSession();
@@ -48,8 +48,11 @@ public class donrec extends HttpServlet {
 		      
 		       d.setUserName(UserName);
 		       d.setUserId(UserId);
-
-		         
+               d.setLatitude(latitude);
+             d.setAddress(Address)
+            ;
+             
+               d.setLoc(loc);
 		         session.save(d);
 		         System.out.println("hello");
 			       session.getTransaction().commit();

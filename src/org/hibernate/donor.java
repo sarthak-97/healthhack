@@ -15,16 +15,24 @@ import javax.persistence.Table;
     
 })
 public class donor {
-     @Id
+     @Id 
+     
 	private String UserId;
 	private String latitude;
 	private String longitude;
-
+	private String loc;
+	
 	private String UserName;
 	private String Address ;
 	private String Dob;
 	private String Diseases;
 	private String Mob;
+	public String getLoc() {
+		return loc;
+	}
+	public void setLoc(String loc) {
+		this.loc = loc;
+	}
 	public String getUserId() {
 		return UserId;
 	}

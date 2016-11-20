@@ -33,11 +33,8 @@ public class orgnrec extends HttpServlet {
 	        String uid=request.getParameter("t1");
 			 String organs =request.getParameter("t2");
 			organs user1= new organs();
-		       user1.setOrgan(organs);
-		      user1.setUserId(uid);
-		      
-		       
-		         
+		       user1.setOrgan(organs); 
+		      user1.setUserId(uid);        
 		         session.save(user1);
 		         System.out.println("hello");
 		         session.getTransaction().commit();

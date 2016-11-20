@@ -27,10 +27,9 @@ public class donor {
 	private String Dob;
 	private String Diseases;
 	private String Mob;
-<<<<<<< HEAD
-=======
-	private String loc;
->>>>>>> branch 'master' of https://github.com/sarthak-97/healthhack.git
+
+
+
 	public String getLoc() {
 		return loc;
 	}

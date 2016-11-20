@@ -10,11 +10,19 @@
 <form action="donrec" method="post">
 <input type=text name="t1">
 <br>
+<<<<<<< HEAD
 <input type=text name="t2"  id="lat" readonly>
+=======
+<input type=text name="t2" hidden="" id="lat">
+>>>>>>> branch 'master' of https://github.com/sarthak-97/healthhack.git
 <br>
 <input type=text name="t3">
 <br>
+<<<<<<< HEAD
 <input type=text name="t4"  id="lon" readonly>
+=======
+<input type=text name="t4" hidden="" id="lon">
+>>>>>>> branch 'master' of https://github.com/sarthak-97/healthhack.git
 <br>
 <input type=text name=t5>
 <br>
@@ -32,6 +40,7 @@
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
+<<<<<<< HEAD
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
@@ -60,6 +69,39 @@
           handleLocationError(false, infoWindow, map.getCenter());
         }
       }
+=======
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            // console.log(pos.lat);
+            document.getElementById("lat").value=pos.lat;
+            document.getElementById("lon").value=pos.lng;
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            // console.log('Loc found');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+>>>>>>> branch 'master' of https://github.com/sarthak-97/healthhack.git
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
             console.log(browserHasGeolocation);
